@@ -1,0 +1,8 @@
+@use '@/scss/colors' as color;
+@import "@/components/page/title-page/scss/mixins.scss";
+@import "@/components/page/back-button/scss/mixins.scss";
+@import "@/components/page/form-builder/scss/mixins.scss";
+@include title-format(color.$primaryColor, center);
+@include backbutton-theme(color.$primaryColor);
+@include form-buttons-align('space-between');
+@include form-theme(color.$primaryColor, color.$grayColor, 2px, color.$whiteSmoke);

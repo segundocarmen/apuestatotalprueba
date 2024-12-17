@@ -1,0 +1,39 @@
+@mixin form-buttons-align($align: space-between) {
+    .formbuilder__form__buttons {
+        flex-direction: row !important;
+        justify-content: $align !important;
+    }
+}
+
+@mixin form-theme(
+    $primaryColor: rgb(196, 195, 197),
+    $secondaryColor: rgba(0, 0, 0, 0.25),
+    $borderWidth: 2px,
+    $successInput: #b6b6b6
+) {
+    .formbuilder__form__group input:valid,
+    .formbuilder__form__group input:focus {
+        border: $borderWidth solid $successInput;
+    }
+    .formbuilder__form__group input:valid + label.form-label,
+    .formbuilder__form__group.disabled > label,
+    .formbuilder__form__group input:focus + label.form-label {
+        // background-color: $secondaryColor;
+        border: 0.5px solid $secondaryColor;
+        // background-color: transparent;
+        color: $primaryColor;
+    }
+    .formbuilder__form__buttons .btn {
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            border: 1px solid $primaryColor !important;
+            background-color: $primaryColor !important;
+            color: $secondaryColor;
+        }
+    }
+}

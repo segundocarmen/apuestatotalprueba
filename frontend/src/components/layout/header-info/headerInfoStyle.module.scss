@@ -1,0 +1,38 @@
+@use '@/scss/colors' as color;
+@use '@/scss/constants' as constants;
+
+.headerinfo {
+    height: constants.$headerInfoHeight;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 900;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    background-color: color.$primaryColor;
+    &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > span {
+            color: color.$whiteColor;
+            animation: promotionText 1s infinite;
+            font-weight: 600;
+            @media screen and (width <= constants.$maxMobileWidth) {
+                font-size: 14px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@keyframes promotionText {
+    50% {
+        color: #fff;
+    }
+    100% {
+        color: color.$secondaryColor;
+    }
+}

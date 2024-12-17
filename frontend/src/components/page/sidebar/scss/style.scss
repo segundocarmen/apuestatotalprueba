@@ -1,0 +1,44 @@
+@use '@/scss/colors' as color;
+@use '@/scss/constants' as constants;
+
+.sidebar {
+    width: constants.$sidebarWidth;
+    height: calc(100vh - 193px);
+    position: fixed;
+    top: 93px;
+    left: 0;
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid rgb(219, 218, 222);
+    box-shadow: rgba(37, 37, 37, 0.08) 5px 5px 5px 5px;
+    @media screen and (width <= constants.$maxTabletWidth) {
+        display: none;
+    }
+}
+
+.sidebar__wrapper {
+    width: 100%;
+    padding: 0;
+    &__list {
+        margin: 0;
+        padding: 0;
+        // border-top: 1.5px solid color.$whiteSmoke !important;
+        &__item {
+            text-align: unset;
+            list-style: unset;
+            // border-bottom: 1.5px solid color.$whiteSmoke !important;
+        }
+    }
+}
+
+.sidebar__wrapper__list__item__link {
+    padding: 25px 10px;
+    display: block;
+    text-decoration: unset;
+    // color: color.$blackColor;
+    font-size: 1.1rem;
+    font-weight: 500;
+}

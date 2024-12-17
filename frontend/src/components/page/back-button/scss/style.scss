@@ -1,0 +1,36 @@
+.backbutton{
+    width: 100%;
+    padding: 5px;
+    font: 1rem;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        &__breadcumb{
+            display: flex;
+            justify-content: space-between;
+            &__link{
+                text-decoration: unset;
+                color: cadetblue;
+                margin-right: 5px;
+                &::before{
+                    content: '/';
+                    margin: 0 5px;
+                    color: #3a3a3a;
+                }
+                &:first-child{
+                    text-transform: capitalize;
+                }
+            }
+        }
+        &__return{
+            display: flex;
+            justify-content: center;
+            &__button{
+                border: unset;
+                background: transparent;
+                cursor: pointer;
+                color: cadetblue;
+            }
+        }
+    }
+}

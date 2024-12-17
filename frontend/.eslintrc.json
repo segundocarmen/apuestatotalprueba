@@ -1,0 +1,17 @@
+{
+    "extends": [
+        "next/core-web-vitals",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/jsx-runtime",
+        "eslint-config-prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "settings": {
+        "next": {
+            "rootDir": "src"
+        }
+    },
+    "rules": {}
+}

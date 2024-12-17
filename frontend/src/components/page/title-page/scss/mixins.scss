@@ -1,0 +1,7 @@
+@mixin title-format($primaryColor: #3a3a3a, $align: center) {
+    .titleheader__text {
+        width: 100%;
+        color: $primaryColor;
+        text-align: $align;
+    }
+}

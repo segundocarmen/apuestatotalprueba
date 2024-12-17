@@ -1,0 +1,26 @@
+@use '@/scss/colors' as color;
+@use '@/scss/constants' as constants;
+
+.footer {
+    width: 100%;
+    min-height: 80px;
+    padding: 20px;
+    background-color: color.$primaryColor;
+    border-top: 1px solid color.$primaryColor;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    &__container {
+        width: 100%;
+        max-width: 1200px;
+        padding: 20px;
+        &__info > span {
+            color: color.$whiteColor;
+        }
+        @media screen and (max-width: constants.$maxTabletWidth) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@mixin table-theme($primaryColor:rgb(196, 195, 197), $secondaryColor:rgba(0, 0, 0, 0.25), $borderWidth:1px, $backgroundColor: #fafafa) {
+    .tablecontainer__wrapper__table > thead{
+        background-color: $primaryColor;
+        th{
+            color: $secondaryColor;
+        }
+    }
+    .tablecontainer{
+        background-color: $backgroundColor;
+    }
+    .tablecontainer__pagination__list__nav,
+    .tablecontainer__pagination__list__nav__item__link.isActive,
+    .tablecontainer__pagination__list__regsxpage{
+        color: $primaryColor;
+    }
+
+    .tablecontainer__pagination__list__nav__item__link{
+        color: $secondaryColor;
+    }
+    .tablecontainer__wrapper{
+        border: $borderWidth solid $secondaryColor;
+    }
+}

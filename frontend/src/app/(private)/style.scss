@@ -1,0 +1,8 @@
+@use '@/scss/colors' as color;
+@import '@/components/page/sidebar/scss/mixins.scss';
+@include sidebar-theme(
+    color.$primaryColor,
+    color.$whiteSmoke,
+    color.$whiteColor,
+    color.$blackColor
+);

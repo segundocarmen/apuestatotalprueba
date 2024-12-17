@@ -1,0 +1,35 @@
+@use '@/scss/colors' as color;
+@use '@/scss/constants' as constants;
+.mainContent {
+    position: relative;
+    background-color: #fff;
+    width: calc(100% - constants.$sidebarWidth);
+    top: constants.$headerHeitght;
+    min-height: calc(100vh - (constants.$headerHeitght + 100px)) !important;
+    height: calc(100vh - (constants.$headerHeitght + 100px));
+    left: constants.$sidebarWidth;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+    &__root {
+        padding: 10px;
+        width: 100%;
+    }
+    @media screen and (width <= constants.$maxTabletWidth) {
+        width: 100%;
+        left: 0;
+    }
+}
+
+.root_public {
+    background-color: color.$whiteSmoke;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.root_private {
+    background-color: color.$whiteSmoke;
+    height: 100% !important;
+    width: 100% !important;
+}

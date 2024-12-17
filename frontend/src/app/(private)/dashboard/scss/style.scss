@@ -1,0 +1,8 @@
+@use '@/scss/colors' as color;
+@import '@/components/page/modal/scss/mixins.scss';
+@import '@/scss/theme/principal.style.scss';
+@include modal-format(
+    color.$primaryColor,
+    color.$secondaryColor,
+    color.$primaryColor
+);

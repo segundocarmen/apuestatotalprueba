@@ -1,0 +1,17 @@
+@mixin buttons-format($createButton:rgb(196, 195, 197), $othersButtons:rgb(196, 195, 197), $distribution: flex-start, $buttonTextColor: #fff) {
+    .sectionbuttons__wrapper{
+        justify-content: $distribution;
+    }
+    .sectionbuttons__wrapper__button{
+        background: $othersButtons !important;
+        color: $buttonTextColor !important;
+        box-shadow: 0 -3px 0 0 rgba(0,0,0,0.4) inset !important;
+        
+        &:first-child{
+            background: $createButton !important;
+        }
+        &:active{
+            box-shadow: 0 3px 0 0 rgba(0,0,0,0.4) inset !important;
+        }
+    }
+}

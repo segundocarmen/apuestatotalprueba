@@ -1,0 +1,18 @@
+@use '@/scss/colors' as color;
+
+.cart-preview {
+    color: color.$whiteColor;
+    position: relative;
+
+    &__icon {
+        color: color.$primaryColor;
+    }
+
+    &__link {
+        display: flex;
+        > img{
+            margin-top: 1px;
+            margin-right: 5px;
+        }
+    }
+}

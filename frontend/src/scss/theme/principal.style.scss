@@ -1,0 +1,7 @@
+@use '@/scss/colors' as color;
+@import "@/components/page/data-viewer/scss/mixins.scss";
+@import "@/components/page/title-page/scss/mixins.scss";
+@import "@/components/page/section-buttons/scss/mixins.scss";
+@include table-theme(color.$primaryColor, color.$whiteSmoke, 0.5px, color.$whiteColor);
+@include title-format(color.$primaryColor, center);
+@include buttons-format(color.$primaryColor, color.$secondaryColor,flex-start, color.$whiteColor);

@@ -1,0 +1,5 @@
+@mixin backbutton-theme($primaryColor:rgb(196, 195, 197)) {
+    .backbutton__wrapper__breadcumb__link,.backbutton__wrapper__return__button{
+        color: $primaryColor;
+    }
+}

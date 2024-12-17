@@ -1,0 +1,17 @@
+@mixin modal-format(
+    $acceptButton: rgb(196, 195, 197),
+    $cancelButton: rgb(196, 195, 197),
+    $headerColor: #fff
+) {
+    .modal__wrapper {
+        &__header {
+            background-color: $headerColor !important;
+        }
+        &__footer__ok {
+            background-color: $acceptButton !important;
+        }
+        &__footer__cancel {
+            background-color: $cancelButton !important;
+        }
+    }
+}
